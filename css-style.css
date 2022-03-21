@@ -19,6 +19,7 @@
     background: #FFFFFF;
     font-family: 'TT Lakes Regular';
     margin: 0 ;
+    box-sizing: border-box;
     } 
 
     .header {
@@ -181,7 +182,7 @@
         margin-bottom: 35px;
     }
     .main__img--banner {
-        width: 320px;
+        width: 100%;
     }
 
     
