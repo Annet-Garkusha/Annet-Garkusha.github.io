@@ -13,10 +13,113 @@ font-style: normal;
 font-display: swap;
     }
     body {
-        width: 100%;
+        max-width: 320px;
         height: auto;
         background: #FFFFFF;
         font-family: 'TT Lakes Regular';
         margin: 0 ;
+        padding:0;
+        font-size: 16px;
         box-sizing: border-box;
-        } 
+        color: #1B1C21;
+    }
+    a img {
+        vertical-align: middle;
+        align-items:center;
+    }
+    .main__menu {
+        list-style: none;
+        padding:0 24px;    
+    }
+    .main__menu  a {
+        text-decoration: none;
+        color: #1B1C21;
+        letter-spacing: -0.2px;
+    }
+    .main__menu .header__logo {
+        padding:0;
+        display:flex;
+        list-style: none;
+        justify-content: space-between; 
+    }
+    .header__logo .icon--1,
+    .header__logo .icon--3 {
+        background: #FF3E79;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; 
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .header__logo .icon--1:hover,
+    .header__logo .icon--3:hover,
+    .footer__icon > li:hover {
+        opacity: 0.6;
+        transition: opacity 1s;
+    }
+    .header__logo .icon--2 {
+        margin-right: 68px;
+    }
+    .main__menu .list {
+        padding:0;
+        margin-bottom: 268px;
+        margin-top: 34.46px; 
+    }
+    .main__menu .list > li {
+        position:relative;
+        line-height: 50px;
+    }
+    .main__menu .list a::before {
+        content:"";
+        position: absolute;
+        background:url(images/highlight.png);
+        width:4px;
+        height: 32px;
+        top:10px;
+        left:-25px;
+        border-radius: 0 5px 5px 0;
+        display:none;
+    }
+    .main__menu .list a:hover::before {
+        display: block;
+    }
+    .main__menu .list a:hover {
+        color:#7E7E82
+    }
+    .main__menu .footer,
+    .footer__icon {
+        padding:0;
+    }
+    .footer__icon > li {
+        display: inline-flex;
+        background: #FF3E79;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        align-items:center;
+        justify-content: center;
+        margin-right: 16px;  
+    }
+    .footer__contacts .email--adress {
+        margin-bottom: 12px;
+        letter-spacing: -0.2px;
+    }
+    .footer__contacts .phone--number {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: -0.6px;
+        margin-bottom:40px;
+    }
+    .footer__lang {
+        display:flex;
+        list-style:none;
+        padding:0;
+    }
+    .footer__lang > li {
+        margin-right: 7px;
+    }
+    .footer__lang > li:hover {
+        color:#7E7E82;
+    }
