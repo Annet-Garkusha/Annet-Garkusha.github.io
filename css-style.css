@@ -126,9 +126,11 @@
         left: 0; 
     }
     .main__menu {
+        display:flex;
         overflow: auto;
         white-space: nowrap;
-        padding-left: 16px;   
+        padding-left: 16px;
+        list-style: none;   
     }
     .menu__link {
         display: inline-flex;
@@ -137,15 +139,10 @@
         font-size: 16px;
         color: #7E7E82;
         height: 40px;
-        text-decoration: none;      
+        text-decoration: none;
+        border: 2px solid transparent;      
     }
     .menu__link:hover {
-        border: 2px solid #B8FFEC;
-        border-radius: 6px;
-        background: #FFFFFF;
-        height: 40px;
-    }
-    .menu a:first-child {
         border: 2px solid #B8FFEC;
         border-radius: 6px;
         background: #FFFFFF;
@@ -231,8 +228,11 @@
         padding: 24px 24px;   
     }
     .main__menu {
-        padding: 0 24px ;
+        padding: 0 24px;
     }
+    .main__menu a {
+        white-space: nowrap;
+    } 
     .main__article .text {
         font-size: 14px;
         width: 336px;
